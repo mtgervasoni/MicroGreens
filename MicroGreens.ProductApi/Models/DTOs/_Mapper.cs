@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MicroGreens.ProductApi.Models.DTOs
 {
-    public class Mapper
+    public static class Mapper
     {
         public static readonly Func<Product, ProductDto> product_productDto = x => x == null ? null : new ProductDto
         {

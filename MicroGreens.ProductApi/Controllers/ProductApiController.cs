@@ -30,16 +30,14 @@ namespace MicroGreens.ProductApi.Controllers
                 _response.Result = productDtos;
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 _response.IsSuccess = false;
                 _response.ErrorMessages = new List<string>() { ex.ToString() };
-
             }
 
             return _response;
         }
-
 
         [HttpGet]
         [Route("{id}")]
@@ -55,7 +53,6 @@ namespace MicroGreens.ProductApi.Controllers
             {
                 _response.IsSuccess = false;
                 _response.ErrorMessages = new List<string>() { ex.ToString() };
-
             }
 
             return _response;
@@ -74,7 +71,6 @@ namespace MicroGreens.ProductApi.Controllers
             {
                 _response.IsSuccess = false;
                 _response.ErrorMessages = new List<string>() { ex.ToString() };
-
             }
 
             return _response;
@@ -93,7 +89,6 @@ namespace MicroGreens.ProductApi.Controllers
             {
                 _response.IsSuccess = false;
                 _response.ErrorMessages = new List<string>() { ex.ToString() };
-
             }
 
             return _response;
@@ -112,12 +107,10 @@ namespace MicroGreens.ProductApi.Controllers
             {
                 _response.IsSuccess = false;
                 _response.ErrorMessages = new List<string>() { ex.ToString() };
-
             }
 
             return _response;
         }
-
 
     }
 }
